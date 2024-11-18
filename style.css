@@ -1,0 +1,146 @@
+:root {
+  --color-1: #0baef9;
+  --color-2: #0873d8;
+  --color-3: #fff;
+  --color-4: #333;
+  --color-5: #f0f3f8;
+}
+
+/* ------------------------------------- */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.ancho {
+  max-width: 1200px;
+  margin: auto;
+}
+
+body {
+  font-family: Helvetica;
+  line-height: 24px;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  color: var(--color-4);
+  background-color: var(--color-5);
+}
+
+button {
+  cursor: pointer;
+}
+
+/* ------------------------------------- */
+
+span {
+  color: var(--color-1);
+}
+
+h1 {
+  line-height: 34px;
+}
+
+/* ------------------------------------- */
+
+.ul_tabs {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.ul_tabs a {
+  text-decoration: none;
+  padding: 10px 30px;
+  text-align: center;
+  display: inline-block;
+  font-weight: bold;
+  border-radius: 10px;
+  color: var(--color-4);
+}
+
+.ul_tabs a:hover {
+  color: var(--color-3);
+  background-color: var(--color-2);
+}
+
+/* .section_tabs {} */
+
+.div_tab_content {
+  /* display: grid;
+  grid-template-areas:
+    "img1 img2 img2"
+    "img3 img4 img5"; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+
+/* .img1 {
+  grid-area: img1;
+}
+
+.img2 {
+  grid-area: img2;
+}
+
+.img3 {
+  grid-area: img3;
+}
+
+.img4 {
+  grid-area: img4;
+}
+
+.img5 {
+  grid-area: img5;
+} */
+
+.div_tab_content figure {
+  position: relative;
+}
+
+.div_tab_content figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: var(--color-3);
+  background-color: rgba(21, 165, 248, 0.856);
+  transition: all .20s linear;
+  opacity: 0;
+}
+
+.div_tab_content figure:hover figcaption {
+  opacity: 1;
+}
+
+
+.div_tab_content img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* ------------------------------------- */
+
+.btnfinal {
+  text-align: center;
+}
+
+.btnfinal a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-3);
+  padding: 10px 30px;
+  background-color: var(--color-2);
+  margin: 20px 0;
+}
